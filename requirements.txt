@@ -1,0 +1,12 @@
+discord.py
+<<<<<<< HEAD
+tabulate
+psutil
+gputil
+datetime
+gpiozero
+=======
+psutil
+GPUtil
+tabulate
+>>>>>>> ce7a4948215ed24fface9f382bc70fbf118a3425
