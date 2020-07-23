@@ -6,7 +6,7 @@ import os
 import datetime
 
 #open json file
-with open('../Discord-Bot-0811/setting.json',mode='r',encoding='utf8') as jfile:
+with open('../Discord-Bot/setting.json',mode='r',encoding='utf8') as jfile:
     jdata = json.load(jfile)
 
 #define prefix
@@ -43,7 +43,7 @@ async def reload (ctx, extension):
         await ctx.send(f'reloaded {extension}')
 
 
-for filename in os.listdir('../Discord-Bot-0811/cmds'):
+for filename in os.listdir('../Discord-Bot/cmds'):
     if filename.endswith('.py'):
         bot.load_extension(f'cmds.{filename[:-3]}')
 
