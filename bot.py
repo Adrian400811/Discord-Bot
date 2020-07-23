@@ -49,4 +49,4 @@ for filename in os.listdir('../Discord-Bot/cmds'):
 
 #let the bot run
 if __name__ == "__main__":
-    bot.run(sdata['TOKEN'])
+    bot.run(jdata['TOKEN'])
