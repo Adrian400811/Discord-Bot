@@ -3,7 +3,7 @@ from discord.ext import commands
 from core.classes import Cog_Extension
 import random
 import json
-with open('../Discord-Bot-0811/setting.json',mode='r',encoding='utf8') as jfile:
+with open('../Discord-Bot/setting.json',mode='r',encoding='utf8') as jfile:
     jdata = json.load(jfile)
 
 class React(Cog_Extension):
