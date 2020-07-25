@@ -4,20 +4,6 @@ from discord.ext import commands
 import json
 import os
 import datetime
-import tkinter as tk
-
-window = tk.Tk()
-window.title('Discord Bot')
-window.geometry('800x600')
-window.configure(background='white')
-
-header_label = tk.Label(window, text='Discord Bot')
-header_label.pack()
-
-height_frame = tk.Frame(window)
-height_frame.pack(side=tk.TOP)
-height_label = tk.Label(height_frame, text='Only close this window when you what to stop the bot.')
-height_label.pack(side=tk.LEFT)
 
 #open json file
 with open('../Discord-Bot/setting.json',mode='r',encoding='utf8') as jfile:
