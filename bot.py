@@ -15,7 +15,7 @@ bot = commands.Bot(command_prefix='4')
 #send msg on ready
 @bot.event
 async def on_ready():
-    await bot.change_presence(status=discord.Status.online, activity=discord.Game("Running on Ubuntu 20.02 LTS"))
+    await bot.change_presence(status=discord.Status.online, activity=discord.Game("Discord Bot"))
     now = datetime.datetime.now()
     print(now.strftime("%Y-%m-%d %H:%M:%S"))
     print(">>Bot is online<<")
