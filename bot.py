@@ -16,7 +16,7 @@ bot = commands.Bot(command_prefix='4', help_command=None)
 
 async def status_task():
     while True:
-        await bot.change_presence(status=discord.Status.online, activity=discord.Game("Running on Ubuntu 20.04 LTS"))
+        await bot.change_presence(status=discord.Status.online, activity=discord.Game('type "4help" for help!'))
         await asyncio.sleep(10)
         await bot.change_presence(status=discord.Status.online, activity=discord.Game("python version: 3.8"))
         await asyncio.sleep(10)
