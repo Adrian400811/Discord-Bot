@@ -27,8 +27,10 @@ async def status_task():
 @bot.event
 async def on_ready():
     bot.loop.create_task(status_task())
-    now = datetime.datetime.now()
-    print(now.strftime("%Y-%m-%d %H:%M:%S"))
+    date_time = datetime.datetime.now()
+    time = date_time.strftime("%Y-%m-%d %H:%M:%S")
+    print(f"[INFO] System Time: {time}")
+    print(f"[INFO] Logged in as {bot.user}")
     print(">>Bot is online<<")
 
 

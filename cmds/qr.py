@@ -12,7 +12,7 @@ class QR(Cog_Extension):
         s = website
         url = pyqrcode.create(s) 
         url.png('qr.png', scale = 6)
-        await ctx.send(file=discord.File("../Discord-Bot-0811/qr.png"))
+        await ctx.send(file=discord.File("../Discord-Bot/qr.png"))
 
 def setup(bot):
     bot.add_cog(QR(bot))
