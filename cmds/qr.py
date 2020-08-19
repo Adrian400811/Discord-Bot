@@ -9,7 +9,7 @@ from core.classes import Cog_Extension
 class QR(Cog_Extension):
 
     @commands.command()
-    async def qr(self, ctx, website):
+    async def qr(self, ctx, *, website):
         s = website
         url = pyqrcode.create(s) 
         url.png('qr.png', scale=6)
