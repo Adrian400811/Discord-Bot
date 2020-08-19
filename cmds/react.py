@@ -10,12 +10,20 @@ class React(Cog_Extension):
     @commands.Cog.listener()
     async def on_message(self, msg):
         if "wau" in msg.content and msg.author != self.bot.user:
-            if msg.author.id != 701998387981189191 and msg.author.id != 690221543858503717:
+            if msg.author.bot:
+                pass
+            else:
                 await msg.channel.send('wau撚夠未')
-        if msg.content.endswith('Hi') and msg.author != self.bot.user and msg.author.id != 701998387981189191:
-            await msg.channel.send('Hi')
-        if msg.content.endswith('hi') and msg.author != self.bot.user and msg.author.id != 701998387981189191:
-            await msg.channel.send('hi')
+        if "Hi" in msg.content and msg.author != self.bot.user:
+            if msg.author.bot:
+                pass
+            else:
+                await msg.channel.send('Hi')
+        if "hi" in msg.content and msg.author != self.bot.user:
+            if msg.author.bot:
+                pass
+            else:
+                await msg.channel.send('hi')
 
 
 def setup(bot):
