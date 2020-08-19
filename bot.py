@@ -32,8 +32,7 @@ async def on_ready():
     print(f"[INFO] System Time: {time}")
     print(f"[INFO] Logged in as {bot.user}")
     print(">>Bot is online<<")
-    print('Hint: Type "stop" anytime in the terminal to shut down the bot.')
-    shutdown()
+    print('Hint: Type "ctrl + c" anytime in the terminal to shut down the bot.')
 
 
 @bot.group(hidden=True)
@@ -65,13 +64,6 @@ for filename in os.listdir('../Discord-Bot/cmds'):
     if filename.endswith('.py'):
         bot.load_extension(f'cmds.{filename[:-3]}')
 
-def shutdown():
-    shut = input()
-    if shut == "stop":
-        print("Shutting Down. Please Wait")
-        exit()
-    else:
-        pass
 
 # let the bot run
 if __name__ == "__main__":
