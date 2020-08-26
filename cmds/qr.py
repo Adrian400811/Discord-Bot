@@ -9,8 +9,8 @@ from core.classes import Cog_Extension
 class QR(Cog_Extension):
 
     @commands.command()
-    async def qr(self, ctx, *, website):
-        s = website
+    async def qr(self, ctx, *, content):
+        s = content
         url = pyqrcode.create(s) 
         url.png('qr.png', scale=6)
         await ctx.send(file=discord.File("../Discord-Bot/qr.png"))
