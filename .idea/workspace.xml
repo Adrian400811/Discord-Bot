@@ -21,6 +21,12 @@
   <component name="ChangeListManager">
     <list default="true" id="fa6c6612-b707-4639-99ce-1e191c51fdcb" name="Default Changelist" comment="added a webpage">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmds/delete.py" beforeDir="false" afterPath="$PROJECT_DIR$/cmds/delete.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmds/event.py" beforeDir="false" afterPath="$PROJECT_DIR$/cmds/event.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmds/member.py" beforeDir="false" afterPath="$PROJECT_DIR$/cmds/member.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmds/react.py" beforeDir="false" afterPath="$PROJECT_DIR$/cmds/react.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmds/say.py" beforeDir="false" afterPath="$PROJECT_DIR$/cmds/say.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +43,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="JupyterTrust" id="76446708-c05e-4fd5-a450-bc4b791a43a2" />
+  <component name="JupyterTrust" id="6204aca4-c7c0-4a09-a56c-56ec6b5e9a78" />
   <component name="ProjectId" id="1gJOWUUIVFysbXlBYr2v9zsDOmH" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -74,6 +80,7 @@
       <workItem from="1597832886296" duration="26000" />
       <workItem from="1597832940898" duration="3211000" />
       <workItem from="1597847507941" duration="35000" />
+      <workItem from="1599394769900" duration="199000" />
     </task>
     <task id="LOCAL-00001" summary="added a webpage">
       <created>1597835582657</created>

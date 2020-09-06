@@ -5,7 +5,7 @@ from core.classes import Cog_Extension
 import json
 
 # open json file
-with open("../Discord-Bot/setting.json", mode='r', encoding='utf8') as sfile:
+with open("../Discord-Bot/settings.json", mode='r', encoding='utf8') as sfile:
     sdata = json.load(sfile)
 
 

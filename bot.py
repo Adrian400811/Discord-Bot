@@ -8,7 +8,7 @@ import asyncio
 import tasks
 
 # open json file
-with open('../Discord-Bot/setting.json', mode='r', encoding='utf8') as jfile:
+with open('../Discord-Bot/settings.json', mode='r', encoding='utf8') as jfile:
     jdata = json.load(jfile)
 
 # define prefix

@@ -2,7 +2,7 @@ import discord
 import json
 from discord.ext import commands
 from core.classes import Cog_Extension
-with open('../Discord-Bot/setting.json', mode='r', encoding='utf8') as jfile:
+with open('../Discord-Bot/settings.json', mode='r', encoding='utf8') as jfile:
     jdata = json.load(jfile)
 
 
