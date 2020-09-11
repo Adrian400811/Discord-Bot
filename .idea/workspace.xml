@@ -19,15 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa6c6612-b707-4639-99ce-1e191c51fdcb" name="Default Changelist" comment="added a webpage">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmds/delete.py" beforeDir="false" afterPath="$PROJECT_DIR$/cmds/delete.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmds/event.py" beforeDir="false" afterPath="$PROJECT_DIR$/cmds/event.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmds/member.py" beforeDir="false" afterPath="$PROJECT_DIR$/cmds/member.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmds/react.py" beforeDir="false" afterPath="$PROJECT_DIR$/cmds/react.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmds/say.py" beforeDir="false" afterPath="$PROJECT_DIR$/cmds/say.py" afterDir="false" />
-    </list>
+    <list default="true" id="fa6c6612-b707-4639-99ce-1e191c51fdcb" name="Default Changelist" comment="added a webpage" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -59,7 +51,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../DRP" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -80,7 +72,7 @@
       <workItem from="1597832886296" duration="26000" />
       <workItem from="1597832940898" duration="3211000" />
       <workItem from="1597847507941" duration="35000" />
-      <workItem from="1599394769900" duration="199000" />
+      <workItem from="1599394769900" duration="353000" />
     </task>
     <task id="LOCAL-00001" summary="added a webpage">
       <created>1597835582657</created>
@@ -113,6 +105,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="added a webpage" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="779" y="311" width="424" height="491" key="FileChooserDialogImpl" timestamp="1599395118380">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="779" y="311" width="424" height="491" key="FileChooserDialogImpl/72.27.1848.1053@72.27.1848.1053" timestamp="1599395118380" />
     <state x="591" y="1368" width="800" height="538" key="Vcs.Push.Dialog.v2" timestamp="1597835590511">
       <screen x="979" y="0" width="1848" height="2160" />
     </state>
