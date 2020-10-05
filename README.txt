@@ -1,3 +1,5 @@
+[![Run on Repl.it](https://repl.it/badge/github/HK0811/Discord-Bot)](https://repl.it/github/HK0811/Discord-Bot)
+
 Setup:
 
     All systems:
