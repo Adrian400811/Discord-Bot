@@ -14,6 +14,7 @@ with open('../Discord-Bot/settings.json', mode='r', encoding='utf8') as jfile:
 # define prefix
 bot = commands.Bot(command_prefix='5', help_command=None)
 
+
 async def status_task():
     while True:
         await bot.change_presence(status=discord.Status.online, activity=discord.Game("4help for help!"))
@@ -22,6 +23,7 @@ async def status_task():
         await asyncio.sleep(10)
         await bot.change_presence(status=discord.Status.online, activity=discord.Game("discord.py version: 1.3.4"))
         await asyncio.sleep(10)
+
 
 # send msg on ready
 @bot.event
@@ -35,26 +37,22 @@ async def on_ready():
     print('Hint: Type "ctrl + c" anytime in the terminal to shut down the bot.')
 
 
-@bot.group(hidden=True)
-async def extension(ctx):
-    pass
-
 # command: load
-@extension.command(hidden=True)
+@bot.command(hidden=True)
 async def load(ctx, extension):
     bot.load_extension(f'cmds.{extension}')
     await ctx.send(f'Loaded {extension}')
 
 
 # command: unload
-@extension.command(hidden=True)
+@bot.command(hidden=True)
 async def unload(ctx, extension):
     bot.unload_extension(f'cmds.{extension}')
     await ctx.send(f'unloaded {extension}')
 
 
 # command: reload
-@extension.command(hidden=True)
+@bot.command(hidden=True)
 async def reload(ctx, extension):
     bot.reload_extension(f'cmds.{extension}')
     await ctx.send(f'reloaded {extension}')

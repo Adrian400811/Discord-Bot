@@ -6,6 +6,7 @@ import json
 with open('../Discord-Bot/settings.json',mode='r',encoding='utf8') as jfile:
     jdata = json.load(jfile)
 
+
 class Event(Cog_Extension):
     
     @commands.Cog.listener()
@@ -19,6 +20,7 @@ class Event(Cog_Extension):
         print(f'{member}left!')
         channel = self.bot.get_channel(int(jdata['MAIN_CHANNEL']))
         await channel.send(f'{member} left!')
+
 
 def setup(bot):
     bot.add_cog(Event(bot))
