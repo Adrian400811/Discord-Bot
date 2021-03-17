@@ -2,9 +2,8 @@ import discord
 import json
 from discord.ext import commands
 from core.classes import Cog_Extension
-with open('../Discord-Bot/settings.json', mode='r', encoding='utf8') as jfile:
+with open('/home/pi/Discord_Bots/Discord-Bot-0811/setting.json', mode='r', encoding='utf8') as jfile:
     jdata = json.load(jfile)
-
 
 class React(Cog_Extension):
     @commands.Cog.listener()
@@ -14,12 +13,12 @@ class React(Cog_Extension):
                 pass
             else:
                 await msg.channel.send('wau撚夠未')
-        if "Hi" in msg.content and msg.author != self.bot.user:
+        if msg.content == "Hi" and msg.author != self.bot.user:
             if msg.author.bot:
                 pass
             else:
                 await msg.channel.send('Hi')
-        if "hi" in msg.content and msg.author != self.bot.user:
+        if msg.content == "hi" and msg.author != self.bot.user:
             if msg.author.bot:
                 pass
             else:

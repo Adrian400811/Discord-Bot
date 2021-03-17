@@ -1,31 +1,22 @@
-# import modules
 import discord
 from discord.ext import commands
 from core.classes import Cog_Extension
 import json
 
-# open json file
-with open("../Discord-Bot/settings.json", mode='r', encoding='utf8') as sfile:
+with open ("../setting.json", mode='r', encoding='utf8') as sfile:
     sdata = json.load(sfile)
 
-
-# build a class
-class Say(Cog_Extension):
-
-    # command: say
+class Say(Cog_Extension):  
+    
     @commands.command()
-    async def say(self, ctx, *, msg):
-        await ctx.message.delete()
-        await ctx.send(msg)
+    async def say(self,ctx,*,msg):
+        if isinstance(ctx.channel, discord.channel.DMChannel):
+            embed=discord.Embed(title="No Private Message", description=f"DM doesn't support this command.", color=0xff0000)
+            embed.set_footer(text="err=NoPrivateMessage")
+            await ctx.send(embed=embed)
+        else:
+            await ctx.message.delete()
+            await ctx.send(msg)
 
-    # command: sayt
-    @commands.command()
-    async def sayt(self, ctx, *, msg):
-        channel = self.bot.get_channel(int(sdata['MAIN_CHANNEL']))
-        await channel.send(msg)
-        await ctx.send("sent")
-
-
-# setup
 def setup(bot):
     bot.add_cog(Say(bot))
